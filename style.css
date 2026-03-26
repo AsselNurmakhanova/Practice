@@ -1,0 +1,151 @@
+body {
+    font-family: serif;
+    background-image: linear-gradient(to bottom, rgba(250, 235, 215, 0.7), rgba(250, 235, 215, 0.7)),
+        url('https://cdn.shopify.com/s/files/1/0510/4366/4060/files/vinyasa_yoga_blog_2.jpg?v=1637857411');
+    background-size: cover;
+    margin: 0;
+}
+
+h1 {
+    color: #171616;
+    text-align: center;
+    padding: 20px;
+    margin-top: 15%;
+    font-size: 150px;
+}
+
+h2 {
+    color: #171616;
+    font-size: 50px;
+    padding: 10px;
+}
+
+h3 {
+    color: #171616;
+    font-size: 30px;
+    padding: 5px;
+}
+
+menu {
+    display: flex;
+    gap: 30px;
+    margin-top: 0;
+    position: fixed;
+    background-color: #171616;
+    width: 100%;
+    height: 10%;
+    top: 0;
+}
+
+menu a {
+    color: antiquewhite;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+menu a:hover {
+    color: rgb(247, 218, 180);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 10px;
+}
+
+.container div {
+    text-align: center;
+    background-color: antiquewhite;
+    font-size: 20px;
+}
+
+.schedule {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    padding: 10px;
+    gap: 10px;
+    background-color: #171616;
+}
+
+.schedule div {
+    text-align: center;
+    background-color: rgb(219, 205, 186);
+    font-size: 20px;
+}
+
+.schedule div.yogaclass {
+    text-align: center;
+    background-color: antiquewhite;
+    font-size: 20px;
+    transition: all 100ms;
+}
+
+.schedule div.yogaclass:hover {
+    transform: translateY(-7px);
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 10px;
+}
+
+.reviews div {
+    text-align: center;
+    background-color: antiquewhite;
+    font-size: 20px;
+}
+
+.reviews div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.locations {
+    display: grid;
+    grid-template-areas:
+        "foto foto txt";
+    padding: 10px;
+    gap: 10px;
+}
+
+.locations div {
+    text-align: center;
+    background-color: antiquewhite;
+    font-size: 20px;
+}
+
+.foto {
+    grid-area: foto;
+}
+.foto img {
+    border-radius: 10%;
+    width:100%;
+}
+.txt {
+    grid-area: txt;
+    background-color: antiquewhite;
+    font-size: 20px;
+    padding: 20px;
+}
+.sm {
+    display: grid;
+    grid-template-areas: ". . area area area . .";
+    padding: 10px;
+}
+.sm div {
+    text-align: center;
+}
+.area {
+    grid-area: area;
+    padding: 20px;
+}
+.area img {
+    width: 70px;
+    height: auto;
+}
